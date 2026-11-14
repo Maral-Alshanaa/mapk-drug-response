@@ -1,0 +1,66 @@
+# Phase 0 data freeze: FILES ONLY. No analytic choice is frozen here (Phase 1 / prereg).
+status: files_recorded_analysis_choices_pending
+recorded_utc: "2026-11-14 06:01 UTC"
+depmap_public_release: "26Q3"   # announced 2026-10-05 on the DepMap community forum
+files:
+  - path: data/raw/depmap_26Q3/Model.csv
+    sha256: 65eb1895800e71a963a3ab56e5d08c8d006cb0d9e7aa68f7e34a3810a2a3cbc7
+    size_bytes: 789805
+  - path: data/raw/depmap_26Q3/OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv
+    sha256: 252d1fedc7014953b19ffe5d68151b4df973c8078b12c9e5ccd97e292548d177
+    size_bytes: 394997160
+  - path: data/raw/depmap_26Q3/OmicsInferredMolecularSubtypes.csv
+    sha256: 71d52a97a5eb93d16a5b45b255219734e148b5ea58d210ff3da6b02d5a2b0659
+    size_bytes: 703344
+  - path: data/raw/depmap_26Q3/OmicsProfiles.csv
+    sha256: 4241e537f0b23139c0e525b4d78fb53ee65c5507771a33e2cd5debd78f7179ea
+    size_bytes: 882568
+  - path: data/raw/depmap_26Q3/OmicsSomaticMutationsMatrixDamaging.csv
+    sha256: 736b7a82b4d1f234dc597a409d104186c282f01b0caa56365c27ff987ae49e20
+    size_bytes: 300957482
+  - path: data/raw/depmap_26Q3/OmicsSomaticMutationsMatrixHotspot.csv
+    sha256: 0cbdacdce2355d2dd600d3741a36ae093dbe77d7bee44bde97411b1e96973058
+    size_bytes: 2701956
+  - path: data/raw/depmap_26Q3/PortalCompounds.csv
+    sha256: a5fdcf7774da39b6f7af187a599051713bb9fb492061ff23945692a6a1e27b88
+    size_bytes: 772558
+  - path: data/raw/depmap_26Q3/README.txt
+    sha256: 5672d9e04f18320e9ca1d25747427275dcabb44bffe45eba34d196f1b44dd3ec
+    size_bytes: 48405
+  - path: data/raw/prism_repurposing/public_24Q2/README.txt
+    sha256: 1ae0f2cb4e23903593f10d2182214363392498f2185d2520c06962ffb156f340
+    size_bytes: 9889
+  - path: data/raw/prism_repurposing/public_24Q2/Repurposing_Public_24Q2_Cell_Line_Meta_Data.csv
+    sha256: 13a85da9e45656c455d3911a4491f3636d7d0975a9d2333dc3d0a3e2cd3b0526
+    size_bytes: 157294
+  - path: data/raw/prism_repurposing/public_24Q2/Repurposing_Public_24Q2_LFC.csv
+    sha256: 824149f9b9f3821eb520b385a5976e1a9977d86b21caf5d22171763800a40523
+    size_bytes: 479352899
+  - path: data/raw/prism_repurposing/public_24Q2/Repurposing_Public_24Q2_LFC_COLLAPSED.csv
+    sha256: 4e9cb6933d6cccc32f83e89383ddc79c79edccfc07aacddc64b9a680ce5bde31
+    size_bytes: 150056831
+  - path: data/raw/prism_repurposing/public_24Q2/Repurposing_Public_24Q2_Treatment_Meta_Data.csv
+    sha256: 6be6422ba804ad0775e78b457677bdf088707b9354746a03e110ae63f5eb2061
+    size_bytes: 1510417
+  - path: data/raw/prism_repurposing/repurposing_20q2/prism-repurposing-20q2-primary-screen-replicate-collapsed-treatment-info.csv
+    sha256: f92e58eb04b0db5c35412b08c50446078de153a2f6a5b862cdb89f532ed29bc5
+    size_bytes: 1312286
+  - path: data/raw/prism_repurposing/repurposing_20q2/prism-repurposing-20q2-secondary-screen-cell-line-info.csv
+    sha256: 682ab554a9089833494b5b67549ccfcd27303c7d53f25e6a43099e066c924c82
+    size_bytes: 84730
+  - path: data/raw/prism_repurposing/repurposing_20q2/prism-repurposing-20q2-secondary-screen-dose-response-curve-parameters.csv
+    sha256: 2ac69a21f1d681fe7447689262b82ca6e3dc90bfef0bd96eb5479b96f424e43d
+    size_bytes: 290170269
+  - path: data/raw/prism_repurposing/repurposing_20q2/prism-repurposing-20q2-secondary-screen-readme
+    sha256: 652173e1050dc92a7005809545bfc2ce7e491a22af2af3ce0b62447e31d2e851
+    size_bytes: 8046
+analysis_choices:   # to be decided in Phase 1 and fixed in the preregistration BEFORE any outcome is seen
+  response_source: null
+  response_screen: null
+  response_measure: null
+  row_selection_rule: null
+  replicate_handling: null
+  mpas_gene_list: null
+  mpas_formula: null
+  mutation_encoding: null
+  lineage_encoding: null

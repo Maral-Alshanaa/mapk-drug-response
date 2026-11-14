@@ -1,0 +1,2 @@
+timestamp_utc,phase,run_id,script,git_sha,input_sha256,output_path,status,notes
+2026-11-14 06:40 UTC,0,P0-Q,"notebook cell Q (inline, not a script)",5b0cc58,252d1fedc7014953b19ffe5d68151b4df973c8078b12c9e5ccd97e292548d177,none (printed only),descriptive_only,MPAS from expression only; no response column read
