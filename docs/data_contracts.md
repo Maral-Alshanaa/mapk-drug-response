@@ -88,7 +88,19 @@ Row-level facts (descriptive):
 | Fibroblast | 1 | 0 |
 
 ## 7. Not yet verified / pending
-- MPAS gene list and score formula (to be typed from the paper by the author); presence of MPAS genes in the expression matrix; MPAS distribution and per-lineage variance.
+- (resolved: see section 8 and docs/mpas_definition.md)
 - Official sources and file names for GDSC1/GDSC2/CTRP response data.
 - Dose range / definition of auc in each PRISM 20q2 secondary screen.
 - Exact download URLs and dates of the manual downloads.
+
+## 8. MPAS (expression only; no response data involved)
+- Definition: docs/mpas_definition.md. All ten genes have exactly one column each in the expression matrix:
+  PHLDA1 (22822), SPRY2 (10253), SPRY4 (81848), DUSP4 (1846), DUSP6 (1848), CCND1 (595), EPHA2 (1969), EPHA4 (2043), ETV4 (2118), ETV5 (2119).
+  Minimum per-gene sd over the 2,130 default-entry lines: 1.56.
+- Eligible lines (a trametinib row in 20q2 secondary, mapped to ModelID, with default-entry expression): 712.
+- MPAS = sum(z)/sqrt(10) on the 712 lines. Reference = all 2,130 default lines (A): mean 0.154, sd 1.953, min -5.625, median 0.377, max 4.636.
+  Reference = the 712 lines (B): mean 0.000, sd 2.034. Spearman(A, B) = 0.9999.
+- Lineage structure: eta^2 = 0.531 (A) / 0.529 (B); pooled within-lineage sd 1.36 (A) / 1.42 (B) versus overall 1.953 / 2.034.
+  Lineage means (A): Skin 2.989 (sd 0.798, n 44), Pancreas 1.620 (0.959, 36), Lymphoid -3.138 (1.355, 61), Myeloid -2.267 (1.404, 31).
+  Largest sd (A): Breast 2.079 (n 31), Peripheral Nervous System 1.731 (13), Lung 1.675 (116).
+- Lineages with n < 5 among the 712: Prostate 4, Fibroblast 2, Cervix 1, Ampulla of Vater 1.

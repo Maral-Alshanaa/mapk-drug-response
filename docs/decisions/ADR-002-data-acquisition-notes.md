@@ -13,3 +13,5 @@
 6. Known data issues recorded without exclusion decisions: 8 trametinib rows without depmap_id; 7 lines whose only rows failed STR profiling; README "convergence" column absent from the file.
 7. No response value was read, summarised or plotted in Phase 0; only counts of missing values.
 8. Colab runtime restarted twice during Phase 0. In one session the raw files were copied before the skeleton (including .gitignore) was written, so git status listed them as untracked; no commit was made at that time. The working tree was rebuilt in the order: clone, skeleton, copy from Drive, local renames, git-ignore assertion. Manifest hashes were checked against the hashes of the first audit (all matched).
+9. MPAS definition recorded from the paper's Methods (docs/mpas_definition.md). A pasted summary that described the formula as a mean of z-scores was corrected: the paper divides the sum of z-scores by sqrt(10), not by 10.
+10. Expression-only MPAS descriptives (Cell Q) were computed with two z-score reference sets for description only; no choice is made here. Lineage explains about 53% of MPAS variance among the 712 eligible lines.
